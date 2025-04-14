@@ -5,6 +5,7 @@ metadata:
   labels:
     app: cassandra
   name: cassandra
+  namespace: cassandra
 spec:
   replicas: 1
   selector:
@@ -17,7 +18,7 @@ spec:
     spec:
       containers:
       - name: cassandra
-        image: ghcr.io/skr0d/cassandra_image:4.1.8a
+        image: ghcr.io/skr0d/cassandra_image-multi:4.1.8b
         ports:
         - containerPort: 9042
       imagePullSecrets:
