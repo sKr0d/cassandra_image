@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: cassandra
-        image: ghcr.io/skr0d/cassandra_image-multi:4.1.8b
+        image: ghcr.io/skr0d/cassandra_image-multi:4.1.8c
         ports:
         - containerPort: 9042
       imagePullSecrets:
