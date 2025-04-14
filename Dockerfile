@@ -6,6 +6,9 @@
 
 FROM eclipse-temurin:11-jre-jammy
 
+LABEL org.opencontainers.image.description Cassandra 4.1.8 image
+LABEL org.opencontainers.image.source https://github.com/sKr0d/cassandra_image
+
 # explicitly set user/group IDs
 RUN set -eux; \
 	groupadd -r cassandra --gid=999; \
