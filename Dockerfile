@@ -168,7 +168,7 @@ RUN set -eux; \
 VOLUME /var/lib/cassandra
 
 COPY docker-entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/bash","/usr/local/bin/docker-entrypoint.sh"]
 
 # 7000: intra-node communication
 # 7001: TLS intra-node communication
