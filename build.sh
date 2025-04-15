@@ -2,7 +2,7 @@
 #
 
 name="ghcr.io/skr0d/cassandra_image"
-tag="4.1.8d"
+tag="4.1.8e"
 
 # BUILD IAMGES
 docker build -t ${name}-amd64:${tag} \
